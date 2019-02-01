@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='index.css' />
+  <script src='index.js'></script>
+</head>
+
+<body>
+  <div class='container'>
+    <svg class='svg-container' width='600' height='600'>
+      <rect width='100' height='100' fill='cadetblue' class='rotation-object'></rect>
+      <rect width='100' height='100' fill='cadetblue' class='original-object'></rect>
+      <circle r='5' fill='black' class='rotation-center'></circle>
+    </svg>
+    <div class='controls'>
+        <form onsubmit='return false'>
+        <label>
+          X Position
+          <input min='0' max='200' oninput='outxposition.value = xposition.value' type='range' id='xposition' class='x-position' value='0' />
+          <output for='xposition' name='outxposition'></output>
+        </label>
+
+        <label>
+          Y Position
+          <input min='0' max='200' oninput='outyposition.value = yposition.value' type='range' id='yposition' class='y-position' value='0' />
+          <output for='yposition' name='outyposition'></output>
+        </label>
+
+        <label>
+          X Rotation center
+          <input min='0' max='200' oninput='outxrotation.value = xrotation.value' type='range' id='xrotation' class='x-rotation-center' value='0' />
+          <output for='xrotation' name='outxrotation'></output>
+        </label>
+
+        <label>
+          Y Rotation center
+          <input min='0' max='200' oninput='outyrotation.value = yrotation.value' type='range' id='yrotation' class='y-rotation-center' value='0' />
+          <output for='yrotation' name='outyrotation'></output>
+        </label>
+        </form>
+      </div>
+  </div>
+</body>
+
+</html>
